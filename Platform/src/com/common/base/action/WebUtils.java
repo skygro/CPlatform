@@ -13,13 +13,13 @@ public class WebUtils {
 		          SessionContainer sessionContainer = (SessionContainer)request
 		         .getSession().getAttribute(
 		          SessionConstants.SESSION_CONTAINER);
-		      if (sessionContainer == null) {
-		          sessionContainer = new SessionContainer();
-		          HttpSession session = request.getSession(false);
-		          session.setAttribute(SessionConstants.SESSION_CONTAINER, 
-		          sessionContainer);
-		      }
-		      return sessionContainer;
+			      if (sessionContainer == null) {
+			          sessionContainer = new SessionContainer();
+			          HttpSession session = request.getSession(false);
+			          session.setAttribute(SessionConstants.SESSION_CONTAINER, 
+			          sessionContainer);
+			      }
+			      return sessionContainer;
 		    } catch (Exception e) {throw e; }
 	}
 }
