@@ -10,8 +10,7 @@ public class WebUtils {
 	
 	public static SessionContainer getSessionContainer(HttpServletRequest request) throws Exception{
 		    try{
-		          SessionContainer sessionContainer = (SessionContainer)request
-		         .getSession().getAttribute(
+		          SessionContainer sessionContainer = (SessionContainer)request.getSession().getAttribute(
 		          SessionConstants.SESSION_CONTAINER);
 			      if (sessionContainer == null) {
 			          sessionContainer = new SessionContainer();
