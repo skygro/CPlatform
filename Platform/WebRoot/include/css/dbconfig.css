@@ -1,0 +1,119 @@
+/*通用类*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, p, blockquote, th, td {
+margin:0;
+padding:0;
+font:microsoft yahei;
+font-size:12px;
+}
+
+ol, ul {
+list-style:none outside none;
+}
+
+
+*{
+	margin:0;
+	padding:0;	
+}
+body{		
+	margin:0 auto;
+	font-size:14px;		
+	background-color: #2a9ad4;
+	background-repeat: repeat-x;
+	text-align:center;
+}
+img{
+	border:none;	
+}
+a{
+	color:red;
+	text-decoration:none;	
+}
+a:hover{
+	color:#f60;	
+}
+ul{
+	list-style-type:none;	
+}
+em{
+	font-style:normal;	
+}
+.lt{
+	float:left;	
+}
+.rt{
+	float:right;	
+}
+input.sub,label{
+	border:none;	
+	cursor:pointer;
+}
+
+#login2{ width: 1002px;margin:0 auto;}
+.login_logo{margin-top:60px;}
+.login_main{margin:20px;background-color: #ffffff; height:465px;width:900px;}
+.login_main .left{margin:20px;background-color: #ffffff; width:360px; float:left; }
+.login_main .right{float:right; width:420px;margin:10px 10px;}
+.notlogin{}
+.table{margin:10px 0 20px 30px;; width:360px;}
+.title{color: #000; font-weight:bold; padding:20px;line-height:2.2;	font: 18px microsoft yahei;}
+.tabletext{font: 14px microsoft yahei; padding-top:5px;}
+.input{width:85%; height:25px; line-height:30px; border:solid 1px #a8a8a8; padding-left:5px;color:#000;}
+.input2{width:50%; height:25px; line-height:30px; border:solid 1px #a8a8a8; padding-left:5px;color:#000;}
+.login_bottom{width:100%;height:50px;float:left;color:#999;text-align: center;line-height:2.2;}
+.red{color:red;}
+.line{border:solid 1px #d2d2d2; line-height:30px; position:relative; height:193px; margin-bottom:12px;}
+
+#chatBox {	
+	margin:18px 0 0 0px;
+	width:340px;
+	height:30px;
+	z-index: 111110;
+	background-color: #FFFFCC;
+	padding:3px 0 0 10px;
+	border:solid 1px #a8a8a8;
+	visibility: hidden;
+}
+
+.touclick-bgimg{background-image:url("../images/code2.png")}
+.touclick-reload{cursor:pointer;width:71px;height:28px;position:absolute;left:230px;top:1px}
+.touclick-reload-normal{background-position:0 0px}
+
+.input1{
+	height:22px;
+	font-size: 14px;
+	font-family: "宋体";
+	border:1px solid #B9B9B9;
+	color:#000;
+	padding-left:4px;
+	width:85%;
+	line-height:22px;
+}
+.select{
+   height:22px;
+    font-size: 14px;
+	border:1px solid #B9B9B9;
+	color:#000;
+	padding-left:4px;
+	width:85%;
+}
+.input2{
+	height:39px;
+	font-size: 14px;
+	font-family: "宋体";
+	border:1px solid #B9B9B9;
+	color:#000;
+	padding-left:4px;
+	width:345px;
+}
+.submit_btn{   
+         width:345px;   
+         height:39px;   
+         background:url(../image/login/loginbt.png) no-repeat center;   
+         cursor:pointer;   
+         display:block;   
+         font-size:0;   
+         line-height:0;   
+         text-indent:-9999px;
+         border:0px;   
+}  

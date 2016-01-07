@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<!-- Action配置 -->
+	<!-- 系统登录  -->
+	<bean id="loginAction" class="com.system.action.LoginAction" scope="prototype">
+		<property name="loginService">
+			<ref bean="loginService" />
+		</property>
+		<property name="userService">
+			<ref bean="userService" />
+		</property>
+		<property name="roleService">
+			<ref bean="roleService" />
+		</property>
+	</bean>
+	
+	<!-- 主页面  -->
+	<bean id="indexAction" class="com.system.action.IndexAction" scope="prototype">
+		<property name="indexService">
+			<ref bean="indexService" />	
+		</property>
+	</bean>
+	
+	<!-- 用户管理 -->
+	<bean id="userAction" class="com.system.action.UserAction" scope="prototype">
+		<property name="userService">
+			<ref bean="userService" />
+		</property>
+		<property name="roleService">
+			<ref bean="roleService" />
+		</property>
+		<property name="organizationService">
+			<ref bean="organizationService" />
+		</property>
+	</bean>
+	
+	<!-- 菜单管理  -->
+	<bean id="menuAction" class="com.system.action.MenuAction" scope="prototype">
+		<property name="menuService">
+			<ref bean="menuService" />
+		</property>
+		<property name="roleService">
+			<ref bean="roleService" />
+		</property>
+	</bean>
+	
+	<!-- 组织管理 -->
+	<bean id="organizationAction" class="com.system.action.OrganizationAction" scope="prototype">
+		<property name="organizationService">
+			<ref bean="organizationService" />
+		</property>
+		<property name="roleService">
+			<ref bean="roleService" />
+		</property>
+	</bean>
+	
+	<!-- 组织管理 -->
+	<bean id="roleAction" class="com.system.action.RoleAction" scope="prototype">
+		<property name="roleService">
+			<ref bean="roleService" />
+		</property>
+		<property name="userService">
+			<ref bean="userService" />
+		</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table name="C_SYS_DEPART" schema="CPLATFORM" class="Depart">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_EVENT" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_EXCEPTION" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_FUNCUSER" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_SESSION" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_USER" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_USERGROUP" schema="CPLATFORM"
+		class="UserGroup">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_USERROLE" schema="CPLATFORM" class="UserRole">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_ROLEFUNC" schema="CPLATFORM" class="RoleFunc">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_ROLE" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_PARAM" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_MONITOR" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_ICON" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_GROUP" schema="CPLATFORM" class="Group">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_FUNMODEL" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_ORGANIZATION" schema="CPLATFORM">
+		<primary-key>
+			<generator class="native"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_ORG_UNIT" schema="CPLATFORM">
+		<primary-key>
+			<generator class="increment"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_MENU" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_ROLEMENU" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_ROLEORG_UNIT" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_ROLEUSER" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_ROLE_MENU" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_ROLE_ORG_UNIT" schema="CPLATFORM">
+		<primary-key>
+			<generator class="increment"></generator>
+		</primary-key>
+	</table>
+	<table name="C_SYS_ROLE_USER" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="P_SYS_EVENT" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="P_SYS_EXCEPTION" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="P_SYS_ICON" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="P_SYS_MENU" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="P_SYS_MONITOR" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="P_SYS_ORG_UNIT" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="P_SYS_PARAM" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="P_SYS_ROLE" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="P_SYS_ROLE_MENU" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="P_SYS_ROLE_ORG_UNIT" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="P_SYS_ROLE_USER" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="P_SYS_SESSION" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+	<table name="P_SYS_USER" schema="CPLATFORM">
+		<primary-key>
+			<generator class="sequence"></generator>
+		</primary-key>
+	</table>
+<table name="P_SYS_ORG_UNIT_USER" schema="CPLATFORM">
+	<primary-key>
+		<generator class="sequence"></generator>
+	</primary-key>
+</table>
+</hibernate-reverse-engineering>

@@ -1,0 +1,119 @@
+/*<meta http-equiv="Content-Type" content="text/html; charset=utf-8">*/
+* {
+	font-size: 12px;
+}
+
+/*表格样式1*/
+.table {
+	width: 100%;
+	background-color:#cccccc;
+}
+
+.table tr td{
+	vertical-align:middle; 
+	align:left;
+}
+
+/*表格标题*/
+.table_title {
+	background-color: #edeef0;
+	background-repeat: repeat-x;
+	background-position: top;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 3px;
+	padding-left: 2px;
+	font-size: 14px;
+	height: 26px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #d0d0d0;
+	border-bottom-color: #d0d0d0;
+}
+
+.c_textbox {
+	border: 1px solid #D4D4D4;
+    background-color: #fff;
+    padding: 0;
+    height:100%;
+    width:100%;
+    vertical-align: middle;
+	display: inline-block;
+    white-space: nowrap;
+    line-height:20px;
+    padding:0 0 0 2px;
+}
+
+textarea{
+	overflow:hidden；
+}
+
+input:focus { 
+ outline:none; 
+}  
+
+
+/*表格间隔行1 8.31修改了部分样式*/
+.alternate_line1 {
+	background-color: #ffffff;
+	text-valign: center;
+	padding: 2px 3px;
+	font-size: 14px;
+	height: 30px;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: #d0d0d0;
+}
+
+/*表格间隔行2*/
+.alternate_line2 {
+	background-color: #fafafa;
+	text-valign: center;
+	padding: 2px 3px;
+	font-size: 14px;
+	height: 30px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #d0d0d0;
+}
+
+/*表格中的标题单元格(蓝色)*/
+.td_title {
+	font-size: 12px;
+	background-color: #f7f7f7;
+	height: 24px;
+	text-align:right;
+}
+
+/*表格中的内容单元格*/
+.td_content {
+	font-size: 12px;
+	background-color: #ffffff;
+	height: 24px;
+	line-height:24px;
+	padding:1px;
+}
+.overflow_text{
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	text-overflow:ellipsis !important;
+}
+
+.combtn{
+	height:22px;
+	background:#2a9ad4;
+	border:none;
+	font-size:13px;
+	color:#ffffff;
+	text-align:center;
+	padding:5px 10px;
+}
+.combtn:hover{
+	padding:5px 10px;
+	background:#0c86c5;
+	border:none;
+	font-size:13px;
+	color:#ffffff;
+}

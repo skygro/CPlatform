@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- 为true时，就可以在struts.xml配置“*”的通配符，来调用action里的方法 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+	<!-- Head和Include标签的解析编码。 资源和配置文件的解析编码。 -->
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<!-- 是否自动重新加载本地的资源文件 -->
+	<constant name="struts.i18n.reload" value="true" />
+	<!-- 系统是否自动重新加载该文件 -->
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<!-- struts2中文件上传大小第一关 -->
+	<constant name="struts.multipart.maxSize" value="1024000000" />
+	<!-- 该属性设置是否每次HTTP请求到达时，系统都重新加载资源文件 -->
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources,ApplicationMessages" />
+	<!-- 浏览器是否缓存静态内容,开发中设置为false -->
+	<constant name="struts.serve.static.browserCache" value="false" />
+	<!-- 交给spring创建action -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!--后缀定义拦截 -->
+	<constant name="struts.action.extension" value="pt,html" />
+	<package name="default" extends="struts-default">
+		<interceptors>
+			<interceptor name="LoginInterceptor" class="loginInterceptor" />
+			<interceptor-stack name="cpStack">
+				<interceptor-ref name="servletConfig" />
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="params" />
+				<interceptor-ref name="LoginInterceptor" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="cpStack" />
+		<global-results>
+			<result name="loginIn" type="redirect">/login/system_loginInit.pt</result>
+		</global-results>
+	</package>
+   
+   <include file="struts/**/*.xml"/>
+   
+</struts>

@@ -1,0 +1,188 @@
+@charset "utf-8";
+/*.body_bg {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #5e96c5;
+	background-image: url(images/bg.gif);
+	background-color: #172a45;
+	background-image: url(../images/bg_up.png);
+	background-position: top;
+	text-align: center;
+	background-repeat: no-repeat;
+}*/
+
+@charset "utf-8";
+/* Browser reset style */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+li{ list-style:none;}
+.f10{ font-size:10px;}
+
+/* login style */
+body{ background:#f7f7f7; font-size:12px;font-family:Verdana, Geneva, sans-serif; }
+
+.login_header{ width:100%; background:#2a9ad4 url(../image/login/login_01.jpg) top left no-repeat; height:300px; position:relative;}
+
+.login_main{ position: absolute; positon:absolute;top:50%;left:50%;margin-top:-80px;margin-left:-205px;width:400px;}
+
+.login_main h1{ background:url(../image/login/login_05.jpg) no-repeat center; height:41px; margin-bottom:40px;}
+
+
+.login_main .title{position: absolute; background:url(../image/login/login_09.jpg) no-repeat center left; height:48px; top: 94px; left:-9px;}
+.login_main .title h2{ display:block; margin-top:7px;
+	background: #2a9ad4 url(../image/login/login1_12.jpg) no-repeat 23px 7px;
+	height: 33px;
+	width:389px;
+}
+
+.l_radius{-moz-border-radius:3px;-ms-border-radius:3px;-webkit-border-radius:3px; border-radius:3px;}
+.l_radius2{-moz-border-radius:5px;-ms-border-radius:5px;-webkit-border-radius:5px; border-radius:5px;}
+.error_div{margin-top: 10px;color: #ff2b2b; text-align: center;}
+
+.login_tab{ position:relative; width:353px; height:215px; padding:80px 0 0 45px; border:1px solid #d7d7d7; background: url(../image/login/login_13.jpg);}
+
+.login_tab dl{ width:310px; height:42px; border:1px solid #cecece;
+ margin-bottom:23px; background:url(../image/login/login_16.jpg) repeat-x top;}
+.login_tab dl dt{  float:left; width:35px; height:42px; display:block;}
+
+.login_tab .ico01{ background: url(../image/login/login_19.png) center no-repeat;}
+.login_tab .ico02{ background: url(../image/login/login_25.png) center no-repeat;}
+
+.login_tab dl dd .inp{ width:265px; border:0; height:40px; line-height:40px; padding-left:5px; color:#878787; background:url(../image/login/login_16.jpg) repeat-x ; font-size:18px; font-weight:bold;}
+
+.login_tab p a{ display:block; width:170px; height:48px; background: url(../image/login/login_21.jpg) no-repeat;cursor:pointer; margin:0 auto;}
+
+.login_tab p{ padding-top:5px;width:310px;}
+.login_tab p a:hover{ background:url(../image/login/login1_29.jpg) no-repeat;}
+
+
+.login_footer{ text-align:center; padding-top:10px; color:#8e8e8e; line-height:17px;}
+
+
+.relogin_body_bg{ background:#2a9ad4;}
+
+.relogin_main{ padding-top:20px;width:400px; position:relative; margin:0 auto;}
+
+
+.relogin_main .title{position: absolute; background:url(../image/login/login_09.jpg) no-repeat center left; height:48px; top:35px; left:-9px;}
+.relogin_main .title h2{ display:block; margin-top:7px;
+	background: #2a9ad4 url(../image/login/login1_12.jpg) no-repeat 23px 7px;
+	height: 33px;
+	width:389px;
+}
+	
+.relogin_tab{ position:relative; width:353px; height:215px; padding:80px 0 0 45px; border:1px solid #d7d7d7; background: url(../image/login/login_13.jpg);}
+
+.relogin_tab dl{ width:310px; height:42px; border:1px solid #cecece;
+ margin-bottom:23px; background:url(../image/login/login_16.jpg) repeat-x top;}
+.relogin_tab dl dt{  float:left; width:35px; height:42px; display:block;}
+
+.relogin_tab .ico01{ background: url(../image/login/login_19.png) center no-repeat;}
+.relogin_tab .ico02{ background: url(../image/login/login_25.png) center no-repeat;}
+
+.relogin_tab dl dd .inp{ width:265px; border:0; height:40px; line-height:40px; padding-left:5px; color:#878787; background:url(../image/login/login_16.jpg) repeat-x ; font-size:18px; font-weight:bold;}
+
+.relogin_tab p a{ display:block; width:170px; height:48px; background: url(../image/login/login_21.jpg) no-repeat;cursor:pointer; margin:0 auto;}
+
+.relogin_tab p{ padding-top:5px;width:310px;}
+.relogin_tab p a:hover{ background:url(../image/login/login1_29.jpg) no-repeat;}
+
+
+
+.login_bg {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image: url(../image/login/login_bg.gif);
+	background-repeat: no-repeat;
+	height: 315px;
+	width: 545px;
+}
+.table {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体";
+	font-size: 12px;
+}
+.text_copyright {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #D7E1EC;
+}
+/*
+.input_bg1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体";
+	font-size: 12px;
+	color: #000000;
+	width: 180px;
+	height: 18px;
+	padding-top: 3px;
+	padding-left: 3px;
+	background-image: url(images/text-bg.gif);
+	background-repeat: repeat-x;
+	border: 1px solid #7f9db9;
+}*/
+.input_bg2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体";
+	font-size: 12px;
+	color: #000000;
+	width: 100px;
+	height: 18px;
+	padding-top: 3px;
+	padding-left: 3px;
+	background-image: url(../image/login/text-bg.gif);
+	background-repeat: repeat-x;
+	border: 1px solid #7f9db9;
+}
+.input_yzm {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体";
+	font-size: 12px;
+	color: #000000;
+	width: 76px;
+	height: 24px;
+	padding-top: 3px;
+	padding-left: 3px;
+	border: 1px solid #7f9db9;
+	background-color: #CCCCCC;
+}
+.login_td{
+	float: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体";
+	font-size: 12px;
+	text-indent: 0px;
+	/*font-weight:bold;*/
+/* MODIFY BY TENGYF 60->80*/
+	width:80px ;
+	height:20px;
+	text-align:right;
+	color:#50D5FF;
+	padding-left:5px;
+	/*
+	text-shadow:1px 1px 2px rgba(0,0,0,.8), 0 0 1em rgba(255, 0, 255, 0.5), 0 0 0.2em rgba(0, 0, 255, 0.9);
+	filter:Shadow(color=#ffff00, strength=0.5);  */   
+}
+
+.login_input {
+	height: 23px;
+	line-height: 23px;
+	width:260px;
+	background-color:#000;
+	color:#fff;
+	text-indent: 8px;
+	display: block;
+	-moz-border-radius: 32px;
+	-webkit-border-radius: 32px;
+	border-radius: 32px;
+	/*绝对路径*/
+  	behavior: url(/framework/techcomp/security/ie-css3.htc);
+	border-color: #172a45;
+	border-width: 0px;
+	
+}
+#logonform{
+}
+
+#placeholder{
+	border-color: #172a45;
+	height: 10px;
+}
+#loginButton{
+	margin-right: auto;
+	margin-left: auto;
+}

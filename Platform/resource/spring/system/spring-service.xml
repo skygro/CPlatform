@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<!-- 系统登录  -->
+	<bean id="loginService" class="com.system.service.impl.LoginServiceImpl" parent="hService" />
+	<bean id="indexService" class="com.system.service.impl.IndexServiceImpl" parent="hService" />
+	<bean id="menuService" class="com.system.service.impl.MenuServiceImpl" parent="hService" />
+	<bean id="organizationService" class="com.system.service.impl.OrganizationServiceImpl" parent="hService" />
+	<bean id="roleService" class="com.system.service.impl.RoleServiceImpl" parent="hService" />
+	<bean id="userService" class="com.system.service.impl.UserServiceImpl" parent="hService" />
+</beans>

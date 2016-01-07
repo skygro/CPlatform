@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+.c_addIcon{background:url(../image/icons/grid/add_b.png) !important;}
+.c_delIcon{background:url(../image/icons/grid/del_b.png) !important;}
+.c_saveIcon{background:url(../image/icons/grid/save_b.png) !important;}
+
+.c_queryIcon{background:url(../image/icons/form/query_b.png) !important;}
+.c_editIcon{background:url(../image/icons/form/edit_b.png) !important;}
+.c_lockIcon{background:url(../image/icons/grid/lock_b.png) !important;}
+.c_unlockIcon{background:url(../image/icons/grid/unlock_b.png) !important;}
+
+.c_doIcon{background:url(../image/icons/grid/do_b.png) !important;}
+.c_undoIcon{background:url(../image/icons/grid/do.png) !important;}

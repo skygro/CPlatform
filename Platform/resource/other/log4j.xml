@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+	<!-- appender of NT_online -->
+	<appender name="NT_online" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/var/common/log/NT_online.log" />
+		<param name="Append" value="true" />
+		<param name="Encoding" value="GBK" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd|HH:mm:ss.SSS}|%t|%-5p|%m%n" />
+		</layout>
+	</appender>
+	 <!--appender of NT_auth -->
+	<appender name="NT_auth" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/var/common/auth/NT_auth.log" />
+		<param name="Append" value="true" />
+		<param name="Encoding" value="GBK" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd|HH:mm:ss.SSS}|%m%n" />
+		</layout>
+	</appender>
+	 <!--appender of NT_operation -->
+	<appender name="NT_operation" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/var/common/operation/NT_operation.log" />
+		<param name="Append" value="true" />
+		<param name="Encoding" value="GBK" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd|HH:mm:ss.SSS}|%t|%-5p|%m%n" />
+		</layout>
+	</appender>
+	 <!--appender of NT_timer -->
+	<appender name="NT_timer" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/var/common/debug/NT_timer.log" />
+		<param name="Append" value="true" />
+		<param name="Encoding" value="GBK" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS}|%m%n" />
+		</layout>
+	</appender>
+	 <!--appender of NT_access -->
+	<appender name="NT_access" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/var/common/operation/NT_access.log" />
+		<param name="Append" value="true" />
+		<param name="Encoding" value="GBK" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS}|%t|%m%n" />
+		</layout>
+	</appender>
+	 <!--appender of NT_debug -->
+	<appender name="NT_debug" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="/var/common/debug/NT_debug.log" />
+		<param name="Append" value="true" />
+		<param name="Encoding" value="GBK" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd|HH:mm:ss.SSS}|%t|%-5p|%m%n" />
+		</layout>
+	</appender>
+	 
+	 <!--输出方式：输出到控制台-->  
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd|HH:mm:ss.SSS}|%t|%-5p|%m|(%F:%L)%n" />
+		</layout>
+	</appender>
+
+	<category name="com.opensymphony">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="NT_debug" />
+	</category>
+	<category name="org.apache.struts2">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="NT_debug" />
+	</category>
+	<category name="java.sql.Connection">
+		<appender-ref ref="STDOUT" />
+	</category>
+	<category name="java.sql">
+		<appender-ref ref="STDOUT" />
+	</category>
+	<category name="com.ibatis">
+		<appender-ref ref="STDOUT" />
+	</category>
+	<category name="org.jasig.cas">
+		<appender-ref ref="STDOUT" />
+	</category>
+	<category name="com.common">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="NT_debug" />
+	</category>
+	
+	<category name="com.system.action">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="NT_debug" />
+	</category>
+	<root>
+		<priority value="DEBUG"></priority>
+	</root>
+</log4j:configuration>

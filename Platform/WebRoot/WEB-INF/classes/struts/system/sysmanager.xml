@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!-- 登录页面 -->
+   	<package name="login" extends="struts-default" namespace="/login">
+		<action name="system_*" class="loginAction" method="{1}">
+			<result name="login">/WEB-INF/jsp/login/login.jsp</result>
+			<result name="switchLogin">/WEB-INF/jsp/login/switch.jsp</result>
+			<result name="index" type="redirect">/main/index_indexInit.pt</result>
+			<!--  <result type="chain" name="index">     
+              <param name="actionName">index_indexInit</param>
+              <param name="namespace">/main</param>  
+              <param name="method">indexInit</param>       
+            </result> -->
+			<result name="exit" type="redirect">/login/system_loginInit.pt</result>
+		</action>
+	</package>
+	
+	<!-- 主页面 -->
+	<package name="main" extends="default" namespace="/main">
+		<action name="index_*" class="indexAction" method="{1}">
+			<result name="indexView">/WEB-INF/jsp/login/index.jsp</result>
+		</action>
+	</package>
+	
+	<!-- 菜用户管理 -->
+	<package name="user" extends="default" namespace="/user">
+		<action name="system_*" class="userAction" method="{1}">
+			<result name="userList">/WEB-INF/jsp/system/userList.jsp</result>
+			<result name="statusUserList">/WEB-INF/jsp/system/statusUserList.jsp</result>
+			<result name="activeUserList">/WEB-INF/jsp/system/activeUserList.jsp</result>
+			<result name="roleToUserList">/WEB-INF/jsp/system/roleToUserList.jsp</result>
+			<result name="addOrUpdate">/WEB-INF/jsp/system/addOrUpdate.jsp</result>
+			<result name="orgUnitToUserList">/WEB-INF/jsp/system/orgUnitToUserList.jsp</result>
+		</action>
+	</package>
+	
+	<!-- 菜单管理 -->
+	<package name="menu" extends="default" namespace="/menu">
+		<action name="system_*" class="menuAction" method="{1}">
+			<result name="menuList">/WEB-INF/jsp/system/menuList.jsp</result>
+			<result name="menuToRoleList">/WEB-INF/jsp/system/menuToRoleList.jsp</result>
+		</action>
+	</package>
+	
+	<!-- 组织管理 -->
+	<package name="organizaction" extends="struts-default" namespace="/organization">
+		<action name="system_*" class="organizationAction" method="{1}">
+			<result name="organizationList">/WEB-INF/jsp/system/organizationList.jsp</result>
+			<result name="organizationToRoleList">/WEB-INF/jsp/system/organizationToRoleList.jsp</result>
+		</action>
+	</package>
+	
+	<!-- 角色管理 -->
+	<package name="role" extends="struts-default" namespace="/role">
+		<action name="system_*" class="roleAction" method="{1}">
+			<result name="superAdminRole">/WEB-INF/jsp/system/superAdminRole.jsp</result>
+			<result name="adminRoleList">/WEB-INF/jsp/system/adminRoleList.jsp</result>
+			<result name="busiRoleList">/WEB-INF/jsp/system/busiRoleList.jsp</result>
+		</action>
+	</package>
+	
+</struts>
